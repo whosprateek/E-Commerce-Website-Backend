@@ -1,4 +1,4 @@
-// 1. Import Exprerss
+
 import express from 'express';
 import swagger from 'swagger-ui-express';
 import cors from 'cors';
@@ -11,7 +11,7 @@ import apiDocs from './swagger.json' with { type: 'json' };
 import loggerMiddleware from './src/middlewares/logger.middleware.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
 import {connectToMongoDB} from './src/config/mongodb.js';
-// 2. Create Server
+
 const server = express();
 
 // CORS policy configuration
@@ -21,21 +21,9 @@ var corsOptions = {
 }
 server.use(cors(corsOptions));
 
-// server.use((req, res, next)=>{
-//   res.header('Access-Control-Allow-Origin','http://localhost:5500');
-//   res.header('Access-Control-Allow-Headers','*');
-//   res.header('Access-Control-Allow-Methods','*');
-//   // return ok for preflight request.
-//   if(req.method=="OPTIONS"){
-//     return res.sendStatus(200);
-//   }
-//   next();
-// })
 
 server.use(express.json());
-// Bearer <token>
-// for all requests related to product, redirect to product routes.
-// localhost:3200/api/products
+s
 server.use("/api-docs", 
 swagger.serve, 
 swagger.setup(apiDocs)
@@ -71,13 +59,13 @@ server.use((err, req, res, next)=>{
     );
 });
 
-// 4. Middleware to handle 404 requests.
+
 server.use((req, res)=>{
   res.status(404).send("API not found. Please check our documentation for more information at localhost:3200/api-docs")
 });
 
 
-// 5. Specify port.
+.
 server.listen(3200, ()=>{
   console.log('Server is running at 3200');
   connectToMongoDB();
