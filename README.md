@@ -3,52 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce API Readme</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        pre {
-            background: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        code {
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .section {
-            margin-bottom: 2em;
-        }
-        .badge {
-            display: inline-block;
-            padding: 0.25em 0.4em;
-            font-size: 75%;
-            font-weight: 700;
-            line-height: 1;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: baseline;
-            border-radius: 0.25rem;
-        }
-        .badge-done {
-            color: #fff;
-            background-color: #28a745;
-        }
-        .badge-pending {
-            color: #fff;
-            background-color: #dc3545;
-        }
-    </style>
+
+
 </head>
 <body>
     <h1>E-commerce API</h1>
