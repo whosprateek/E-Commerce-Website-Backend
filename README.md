@@ -51,14 +51,11 @@
     </style>
 </head>
 <body>
-
     <h1>E-commerce API</h1>
-
     <div class="section">
         <h2>Introduction</h2>
         <p>This is the backend API for an E-commerce application. It provides functionalities for managing products, users, and shopping carts. The API is built with Node.js and Express, and it uses MongoDB as the database. It also includes features like JWT authentication, request logging, and API documentation with Swagger.</p>
     </div>
-
     <div class="section">
         <h2>Features</h2>
         <ul>
@@ -72,17 +69,14 @@
             <li>Centralized error handling.</li>
         </ul>
     </div>
-
     <div class="section">
         <h2>API Endpoints</h2>
         <p>The API is documented using Swagger. You can find the detailed documentation at the <code>/api-docs</code> endpoint when the server is running.</p>
-
         <h3>Users</h3>
         <ul>
             <li><code>POST /api/users/signup</code>: Register a new user (customer or seller).</li>
             <li><code>POST /api/users/signin</code>: Login a user and get a JWT token.</li>
         </ul>
-
         <h3>Products</h3>
         <ul>
             <li><code>GET /api/products</code>: Get a list of all products. <span class="badge badge-done">Done</span></li>
@@ -91,7 +85,6 @@
             <li><code>GET /api/products/filter</code>: Filter products based on criteria. <span class="badge badge-done">Done</span></li>
             <li><code>POST /api/products/rate</code>: Rate a product. <span class="badge badge-pending">Pending</span></li>
         </ul>
-
         <h3>Cart</h3>
         <ul>
             <li><code>POST /api/cartItems</code>: Add items to the cart. <span class="badge badge-done">Done</span></li>
@@ -99,7 +92,6 @@
             <li><code>DELETE /api/cartItems/:id</code>: Remove an item from the cart. <span class="badge badge-done">Done</span></li>
         </ul>
     </div>
-
     <div class="section">
         <h2>Technologies Used</h2>
         <ul>
@@ -113,18 +105,15 @@
             <li><strong>multer</strong>: For handling file uploads.</li>
         </ul>
     </div>
-
     <div class="section">
         <h2>Setup and Installation</h2>
         <p>To get a local copy up and running, follow these simple steps.</p>
-
         <h3>Prerequisites</h3>
         <ul>
             <li>Node.js installed on your machine.</li>
             <li>MongoDB installed and running.</li>
         </ul>
-
-        <h3>Installation</h3>
+  <h3>Installation</h3>
         <ol>
             <li>Clone the repository:
                 <pre><code>git clone https://github.com/your_username/e-com-api.git</code></pre>
