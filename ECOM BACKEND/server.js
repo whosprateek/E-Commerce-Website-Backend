@@ -23,7 +23,7 @@ server.use(cors(corsOptions));
 
 
 server.use(express.json());
-s
+
 server.use("/api-docs", 
 swagger.serve, 
 swagger.setup(apiDocs)
